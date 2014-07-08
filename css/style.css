@@ -88,7 +88,7 @@ header nav li {
 @media all and (min-width: 40em) and (max-width: 60em){
   .gallerie{
     position:absolute;
-    top:640px;
+    top:750px;
   }
   .gallerie img {
     margin: 0;
@@ -111,7 +111,7 @@ header nav li {
   }
   .gallerie{
     position:absolute;
-    top:1180px;
+    top:1220px;
   }
   .gallerie img {
     margin: 0;
