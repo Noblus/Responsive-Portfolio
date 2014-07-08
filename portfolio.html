@@ -1,0 +1,154 @@
+<!doctype html>
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/flexslider.css"/>
+	<title>François DEMICHELIS - Portfolio</title>
+</head>
+
+
+<body>
+
+	<header id="header">
+			<div id="menu">
+				<nav>
+					<ul id="nav">
+						<li class="page_item page-item-2 current_page_item"><a href="index.html">Accueil</a></li>
+						<li class="page_item page-item-5"><a href="#CV_exp">Mon CV</a></li>
+						<li class="page_item page-item-7"><a href="#gallery">Portfolio</a></li>
+						<li class="page_item page-item-11"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+<div class="cont">
+	 <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/image1.png" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/image2.png" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/image3.png" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      <br />
+ <div class="cv">
+
+ 	<div class="container">
+    <h1>François DEMICHELIS - Portfolio</h1>
+    <br />
+    <h2 id="CV_exp">CV et expérience</h2>
+    <br />
+    <div class="row gutters">
+        <div class="col col_1-3">
+            <img src="images/1404826408_krfb.png" name="experience">
+           <ul>
+              <br />
+              <li><strong>Baccalauréat</strong></li>
+              <br />
+              <li><strong>DUT GEA (gestion et administration)</strong></li>
+              <br />
+              <li><strong>Diplome Universitaire de web développeur</strong></li>
+              <br />
+              <li><strong>Licence professionnelle LPATC</strong></li>
+              <li>(Développement web des systèmes d'information et multimedia)</li>
+            </ul>
+        </div><!-- end .col -->
+        
+        <div class="col col_1-3">
+            <h2><img src="images/1404824659_php.png" name="php"><img src="images/1404824666_HTML_Logo.png" name="html"></h2>
+            <ul>
+              <li><strong>Développement PHP</strong></li>
+              <li><strong>POO: Notions</strong></li>
+              <li><strong>XML, XSL, XSLT</strong></li>
+              <br />
+              <li><strong>HTML5 CSS3</strong></li>
+              <li><strong>Responsive design</strong></li>
+              <li><strong>Javascript et Jquery</strong></li>
+              <li><strong>CMS: <img src="images/1404824331_social_5.png" name="wp" id="wp"></strong></li>
+            </ul>
+        </div><!-- end .col -->
+        
+        <div class="col col_1-3">
+            <h2><img src="images/1404828602_Photoshop.png" name="photoshop"><img src="images/1404828668_mark-github.png" name="git"></h2>
+            <ul>
+              <li><strong>Photoshop: création de maquettes</strong></li>
+              <br />
+              <li><strong>Photoshop: création de logos</strong></li>
+              <br />
+              <li><strong>GitHub: gestion de versions</strong></li>
+              <br />
+              <li><strong>Flash</strong></li>
+              <br />
+              <li><strong>Gestion de projet</strong></li>
+            </ul>
+        </div><!-- end .col -->
+    </div><!-- end .row -->
+  <br />
+  <br />
+  <br />
+        <div class="row">
+        <div class="col col_2-4">
+          <h2 id="contact">Me contacter</h2>
+              <br />
+          <p>Localisation: Hyéres - Toulon    France</p>
+          <p>Tel: 06 17 18 75 25</p>
+          <a href="mailto:noblusweb@gmail.com" title="E-mail">E-mail</a>
+        </div><!-- end .col -->
+        </div><!-- end .row -->
+</div>
+  <br />
+  <br />
+<div class="gallerie">
+        <h2 id="gallery">Quelques réalisations</h2> <!-- gallery -->
+      <div class="col col_2-4">
+        <div class="gallery-item"><img src="images/image1_mini.png" alt="" title="Kolb Mobile" /></div>
+      </div>
+      <div class="col col_2-4">
+        <div class="gallery-item"><img src="images/image2_mini.png" alt="" title="Kolb" /></div>
+      </div>
+      <div class="col col_2-4">
+        <div class="gallery-item"><img src="images/image3_mini.png" alt="" title="Sp css" /></div>
+      </div>
+        <div class="col col_2-4">
+        <div class="gallery-item"><img src="images/image4_mini.png" alt="" title="Théme bootstrap" /></div>
+      </div>
+</div> <!-- end gallery -->
+</div>
+
+ <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

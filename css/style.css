@@ -1,0 +1,391 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+
+
+html {
+  background: #88cfd3;
+  font-size: 80%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+h1 {
+  font-size: 2.1em;
+}
+h2 {
+  font-size: 1.6em;
+}
+
+#nav{
+  display: block;
+  margin-left: 29%;
+}
+
+header {
+  background: #16A5D7 repeat-x;
+  height: 65px;
+  padding: 0 5%;
+  width: 90%;
+  position: fixed;
+  z-index: 1000;
+}
+
+header nav li {
+    font-size: 14px;
+    font-size: 1.6em;
+    margin-right: 10%;
+    display: inline-block;
+    float: left;
+    margin-top: 2%;
+  }
+
+.flexslider {
+  position: absolute;
+    top:100px;
+    left: 24%;
+    width: 768px;
+    height: 480px;
+}
+
+.flexslider .slides img {
+    width: 768px;
+    height: 480px;
+}
+
+.cv {
+    position: absolute;
+    font-size: 1.6em;
+    top:640px;
+    width: 100%;
+    height:640px;
+}
+#wp{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* =============================
+   Galerie
+   ============================= */
+.gallerie img {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+.gallerie h2 {
+  margin-left: 10%;
+}
+@media all and (min-width: 40em) and (max-width: 60em){
+  .gallerie{
+    position:absolute;
+    top:640px;
+  }
+  .gallerie img {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    width: 430px;
+    height: 270px;
+  }
+}
+@media all and (max-width: 40em){
+  h1{
+    font-size: 1.3em;
+  }
+  h2{
+    font-size: 1.1em;
+    color:white;
+  }
+  li{
+    font-size: 0.9em;
+  }
+  .gallerie{
+    position:absolute;
+    top:1180px;
+  }
+  .gallerie img {
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    width: 265px;
+    height: 166px;
+  }
+}
+
+/* =============================
+   Responsive grid exemple cours
+   ============================= */
+
+/* Use box-sizing */
+.container, .col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row:after {
+    clear: both;
+}
+
+/* Contain floated columns */
+.row:before, .row:after {
+    content:" ";
+    display: table;
+}
+
+/* Default column */
+.col {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/* Tablet and desktop styles */
+@media all and (min-width : 40em) {
+    /* Optional column gutters */
+    .gutters {
+        margin: 0 -10px;
+    }
+    .gutters .col {
+        padding: 0 10px;
+    }
+    /* Column widths */
+    .col_1-4 {
+        width: 25%;
+    }
+    .col_2-4 {
+        width: 50%;
+    }
+    .col_3-4 {
+        width: 75%;
+    }
+    .col_1-3 {
+        width: 33.3333333333%; /* !! Leave all the decimals for accuracy */
+    }
+    .col_2-3 {
+        width: 66.666666667%;
+    }
+}
+
+
+/* =======================
+   Extra demo styles
+   ======================= */
+p {
+  text-align: justify;
+}
+h1:after {
+    content:" Mobile";
+    color: green;
+}
+.container img {
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+@media all and (min-width: 40em) {
+    h1:after {
+        content:" Tablet";
+        color: green;
+    }
+}
+@media all and (min-width: 60em) {
+    h1:after {
+        content:" Desktop";
+        color: green;
+    }
+}
+
+
+
+
+
+/* ==========================
+   Media Query menu et slider 
+   ==========================*/
+
+@media only screen and (max-width: 380px) {
+  .flexslider {
+    position: absolute;
+    top:65px;
+    left: 3%;
+    width: 265px;
+    height: 166px;
+}
+h1{
+  font-size: 1.6;
+}
+
+.flexslider .slides img {
+    width: 265px;
+    height: 166px;
+}
+#nav{
+  display: block;
+  margin-left: 15%;
+}
+
+.container{
+    position: absolute;
+    top:-350px;
+}
+
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+  .flexslider {
+    position: absolute;
+    left: 6%;
+    top:65px;
+    width: 265px;
+    height: 166px;
+}
+
+.flexslider .slides img {
+    width: 265px;
+    height: 166px;
+}
+#nav{
+  display: block;
+  margin-left: 1%;
+}
+
+.container{
+    position: absolute;
+    top:-450px;
+}
+
+}
+
+@media only screen and (min-width: 380px) and (max-width: 680px) {
+#nav{
+  display: block;
+  margin-left: 5%;
+}
+header nav li {
+    font-size: 10px;
+    font-size: 1.3em;
+    margin-right: 8%;
+    display: inline-block;
+    float: left;
+    margin-top: 3%;
+
+  }
+
+.container{
+    position: absolute;
+    top:-150px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 785px) {
+  .flexslider {
+    position: absolute;
+    left: 10%;
+    top:65px;
+    width: 265px;
+    height: 166px;
+}
+
+.flexslider .slides img {
+    width: 265px;
+    height: 166px;
+}
+
+#nav{
+  display: block;
+  margin-left: 15%;
+}
+
+.container{
+    position: absolute;
+    top:-350px;
+}
+
+}
+@media only screen and (min-width: 785px) and (max-width: 959px) {
+  .flexslider {
+    position: absolute;
+    top:100px;
+    left: 10%;
+    margin-right: 40%;
+    width: 538px;
+    height: 336px;
+}
+
+.flexslider .slides img {
+    width: 538px;
+    height: 336px;
+}
+
+.container{
+    position: absolute;
+    top:-100px;
+}
+}
+
+@media only screen and (min-width: 959px) and (max-width: 1080px) {
+  .flexslider {
+    position: absolute;
+    top:120px;
+    left: 13%;
+    margin-right: 40%;
+    width: 768px;
+    height: 480px;
+}
+
+.flexslider .slides img {
+    width: 768px;
+    height: 480px;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1260px) {
+  .flexslider {
+    position: absolute;
+    top:120px;
+    left: 13%;
+    margin-right: 40%;
+    width: 768px;
+    height: 480px;
+}
+
+.flexslider .slides img {
+    width: 768px;
+    height: 480px;
+}
+
+}
+
+
+@media only screen and (min-width: 1260px) and (max-width: 1450px) {
+  .flexslider {
+    position: absolute;
+    top:120px;
+    left: 20%;
+    margin-right: 40%;
+    width: 768px;
+    height: 480px;
+}
+
+.flexslider .slides img {
+    width: 768px;
+    height: 480px;
+}
+
+}
+
+
